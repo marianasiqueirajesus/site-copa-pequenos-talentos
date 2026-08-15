@@ -1,373 +1,393 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Site oficial da copa do mundo 2026 - pequenos talentos">
-    <title>Copa do mundo 2026</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Site Oficial da Copa do Mundo 2026 - Ingressos, Seleções e Estádios">
+  <title>Copa do Mundo 2026</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  </head>
 
 <body>
-    <nav>
-        <div>
-            <div>
-                <span>Copa 2026</span>
-                <ul>
-                    <li><a href="#home">inicio</a></li>
-                    <li><a href="#selecoes">selecoes</a></li>
-                    <li><a href="#estadios">estadios</a></li>
-                    <li><a href="#ingressos">ingressos</a></li>
-                    <li><a href="#contato">contato</a></li>
-                </ul>
-            </div>
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-destaque">Copa</span> 2026
         </div>
-    </nav>
-    <section id="home">
-        <!-- div global -->
-       <div>
-        <!-- div de texto -->
-            <div>
-                <p>Junho e Julho - Canadá, México e EUA </p>
-                <h1> A maior festa <br> do futebol </h1>
-                <p> 
-                    Tres paises, 48 seleçoes e uma unica paixao.
-                    Garanta seu lugar no maior evento esportivo do planeta
-                </p>
-                <!-- div de links -->
-                <div>
-                    <!-- target="_blank" é para deixar aba do site aberta ao cloicar em link externo -->
-                    <a href="#ingressos">Comprar ingressos</a>
-                    <a href="#selecoes">Ver selecoes</a>
-                    
-                </div>
+
+      <ul class="nav-links">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#selecoes">Seleções</a></li>
+        <li><a href="#estadios">Estádios</a></li>
+        <li><a href="#ingressos">Ingressos</a></li>
+        <li><a href="#contato">Contato</a></li>
+        </ul>
+
+    </div>
+  </nav>
+
+  <header id="home">
+
+    <div class="header-content">
+      <div class="header-texto">
+
+        <p class="header-subtitulo">Junho e Julho • Canadá, México e EUA</p>
+        <h1 class="header-titulo">A Maior Festa<br>do Futebol</h1>
+        <p class="header-descricao">
+          Três países, 48 seleções e uma única paixão. 
+          Garanta seu lugar no maior evento esportivo do planeta.
+        </p>
+
+        <div class="header-botoes">
+          <a href="#ingressos" class="btn btn-primario">Comprar Ingressos</a>
+          <a href="#selecoes" class="btn btn-secundario">Ver Seleções</a>
+        </div>
+
+      </div>
+      <div class="header-imagem">
+        <img 
+          src="img/copa-2026.png" 
+          alt="Torcedores comemorando um gol na arquibancada de um estádio lotado"
+          class="header-foto"
+        >
+        </div>
+      </div>
+
+  </header>
+
+  <main>
+
+    <section id="selecoes" class="secao secao-escura">
+      <div class="container">
+
+        <div class="secao-titulo">
+          <h2>Seleções em Destaque</h2>
+          <p>Conheça as equipes favoritas para levantar a taça</p>
+        </div>
+
+        <div class="grid-selecoes">
+          <div class="card-selecao">
+            <div class="card-imagem">
+              <img 
+                src="img/selecao-brasil.svg"
+                alt="Jogadores da seleção brasileira abraçados com a camisa amarela"
+                class="card-foto"
+              >
             </div>
-            <!-- div de imagem -->
-            <div>
-                <img src="img/copa-2026.png" alt="logo da copa do mundo - 2026">
+            <div class="card-corpo">
+              <span class="card-dia">Grupo G</span>
+              <h3>Brasil</h3>
+              <p>América do Sul • 5 Títulos</p>
+              <span class="tag-palco">Cabeça de Chave</span>
             </div>
-       </div>
+          </div>
+
+          <div class="card-selecao">
+            <div class="card-imagem">
+              <img 
+                src="img/selecao-franca.svg"
+                alt="Seleção francesa comemorando vitória em campo"
+                class="card-foto"
+              >
+            </div>
+            <div class="card-corpo">
+              <span class="card-dia">Grupo C</span>
+              <h3>França</h3>
+              <p>Europa • 2 Títulos</p>
+              <span class="tag-palco">Favorita</span>
+            </div>
+          </div>
+
+          <div class="card-selecao">
+            <div class="card-imagem">
+              <img 
+                src="img/selecao-argentina.svg"
+                alt="Time da Argentina perfilado cantando o hino nacional"
+                class="card-foto"
+              >
+            </div>
+            <div class="card-corpo">
+              <span class="card-dia">Grupo A</span>
+              <h3>Argentina</h3>
+              <p>América do Sul • 3 Títulos</p>
+              <span class="tag-palco">Atual Campeã</span>
+            </div>
+          </div>
+
+          <div class="card-selecao">
+            <div class="card-imagem">
+              <img 
+                src="img/selecao-espanha.svg"
+                alt="Jogadores da Espanha tocando a bola durante a partida"
+                class="card-foto"
+              >
+            </div>
+            <div class="card-corpo">
+              <span class="card-dia">Grupo E</span>
+              <h3>Espanha</h3>
+              <p>Europa • 1 Título</p>
+              <span class="tag-palco">Cabeça de Chave</span>
+            </div>
+          </div>
+
+          <div class="card-selecao">
+            <div class="card-imagem">
+              <img 
+                src="img/selecao-inglaterra.svg"
+                alt="Atletas da seleção inglesa saudando a torcida"
+                class="card-foto"
+              >
+            </div>
+            <div class="card-corpo">
+              <span class="card-dia">Grupo B</span>
+              <h3>Inglaterra</h3>
+              <p>Europa • 1 Título</p>
+              <span class="tag-palco">Promessa</span>
+            </div>
+          </div>
+
+          <div class="card-selecao">
+            <div class="card-imagem">
+              <img 
+                src="img/selecao-alemanha.svg"
+                alt="Equipe da Alemanha reunida em círculo antes do jogo"
+                class="card-foto"
+              >
+            </div>
+            <div class="card-corpo">
+              <span class="card-dia">Grupo F</span>
+              <h3>Alemanha</h3>
+              <p>Europa • 4 Títulos</p>
+              <span class="tag-palco">Cabeça de Chave</span>
+            </div>
+          </div>
+
+        </div>
+        </div>
     </section>
+    <section id="estadios" class="secao secao-clara">
 
-    <main>
-        
-        <section id = "selecoes">
-            <div>
-                <div>
-                    <h2>selecoes em destaque</h2>
-                    <p>Conheça as equipes favoritas para levantar a taça</p>
-                </div>
-                <!-- div de selecoes -->
-                 <div> 
-                    <!-- div selecao 1 -->
-                    <div>
-                        <!-- div imagem selecao -->
-                        <div>
-                            <img src="img/selecao-brasil.svg"
-                             alt="banner selecao brasil">
-                        </div>
-                        <!-- div corpo da selecao -->
-                        <div> 
-                            <span> Grupo G</span>
-                            <h3> brasil</h3>
-                            <P> America do sul - 5 titulos</P>
-                            <span>Cabeça da chave</span>
-                        </div>
-                    </div>
-                    <!-- div selecao 2 -->
-                    <div>
-                        <!-- div imagem selecao -->
-                        <div>
-                            <img src="img/selecao-franca.svg"
-                             alt="banner selecao frança">
-                        </div>
-                        <!-- div corpo da selecao -->
-                        <div> 
-                            <span> Grupo C</span>
-                            <h3> frança </h3>
-                            <P> Europa - 2 titulos</P>
-                            <span>Favorit</span>
-                        </div>
-                    </div>
-                        <!-- div selecao 3 -->
-                    <div>
-                        <!-- div imagem selecao -->
-                        <div>
-                            <img src="img/selecao-argentina.svg"
-                             alt="banner selecao argentina">
-                        </div>
-                        <!-- div corpo da selecao -->
-                        <div> 
-                            <span> Grupo A</span>
-                            <h3> Argentina</h3>
-                            <P> America do sul - 3 titulos</P>
-                            <span>Atual campeã</span>
-                        </div>
-                    </div>
-                        <!-- div selecao 4 -->
-                    <div>
-                        <!-- div imagem selecao -->
-                        <div>
-                            <img src="img/selecao-espanha.svg"
-                             alt="banner selecao espanha">
-                        </div>
-                        <!-- div corpo da selecao -->
-                        <div> 
-                            <span> Grupo E</span>
-                            <h3> Espanha</h3>
-                            <P> Europa - 1 titulos</P>
-                            <span>Cabeça da chave</span>
-                        </div>
-                    </div>
-                        <!-- div selecao 5-->
-                    <div>
-                        <!-- div imagem selecao -->
-                        <div>
-                            <img src="img/selecao-inglaterra.svg"
-                             alt="banner selecao inglaterra">
-                        </div>
-                        <!-- div corpo da selecao -->
-                        <div> 
-                            <span> Grupo L</span>
-                            <h3> Inglaterra</h3>
-                            <P> Europa - 1 titulos</P>
-                            <span>Promessa</span>
-                        </div>
-                    </div>
-                        <!-- div selecao 6 -->
-                    <div>
-                        <!-- div imagem selecao -->
-                        <div>
-                            <img src="img/selecao-alemanha.svg"
-                             alt="banner selecao alemanha">
-                        </div>
-                        <!-- div corpo da selecao -->
-                        <div> 
-                            <span> Grupo F</span>
-                            <h3> Alemanha</h3>
-                            <P> Europa - 4 titulos</P>
-                            <span>Cabeça da chave</span>
-                        </div>
-                    </div>
-                 </div>
-            </div>
-        </section>
-        <section id = "estadios">
-            <!-- div global -->
-            <div>
-                <!-- div de titulo -->
-                <div>
-                    <h2>Palcos do espetáculo</h2>
-                    <P>Conheça as arenas que sediarão jogos inesqueciveis </P>
+      <div class="container">
+
+        <div class="secao-titulo">
+          <h2>Palcos do Espetáculo</h2>
+          <p>Conheça as arenas que sediarão os jogos inesquecíveis</p>
+        </div>
+
+        <div class="grid-galeria">
+          <div class="foto-item foto-grande">
+            <img 
+              src="img/azteca.jpg"
+              alt="Visão panorâmica do Estádio Azteca lotado no México"
+              class="foto-img"
+            >
+            <div class="foto-legenda">Estádio Azteca — Cidade do México</div>
+          </div>
+
+          <div class="foto-item">
+            <img 
+              src="img/metlife.jpg"
+              alt="Fachada moderna do MetLife Stadium iluminada à noite"
+              class="foto-img"
+            >
+            <div class="foto-legenda">MetLife Stadium — NY/NJ</div>
+          </div>
+
+          <div class="foto-item">
+            <img 
+              src="img/sofi.jpg"
+              alt="Design futurista da cobertura do SoFi Stadium em Los Angeles"
+              class="foto-img"
+            >
+            <div class="foto-legenda">SoFi Stadium — Los Angeles</div>
+          </div>
+
+          <div class="foto-item">
+            <img 
+              src="img/bmo.jpg"
+              alt="Visão do gramado do BMO Field em Toronto"
+              class="foto-img"
+            >
+            <div class="foto-legenda">BMO Field — Toronto</div>
+          </div>
+
+          <div class="foto-item">
+            <img 
+              src="img/hard-rock.jpg"
+              alt="Vista aérea do Hard Rock Stadium em Miami"
+              class="foto-img"
+            >
+            <div class="foto-legenda">Hard Rock Stadium — Miami</div>
+          </div>
+
+          <div class="foto-item">
+            <img 
+              src="img/bc-place.jpg"
+              alt="Interior do BC Place com seu teto retrátil em Vancouver"
+              class="foto-img"
+            >
+            <div class="foto-legenda">BC Place — Vancouver</div>
+          </div>
+
+        </div>
+        </div>
+
+    </section>
+    <section id="ingressos" class="secao secao-escura">
+
+      <div class="container">
+
+        <div class="secao-titulo">
+          <h2>Garanta Seu Ingresso</h2>
+          <p>Preencha os dados abaixo e reserve sua cadeira na história</p>
+        </div>
+
+        <div class="ingressos-layout">
+          <div>
+            <form id="form-ingresso" class="formulario">
+
+              <div class="form-linha">
+                <div class="form-grupo">
+                  <label for="nome">Nome completo</label>
+                  <input 
+                    type="text" 
+                    id="nome" 
+                    name="nome" 
+                    placeholder="Seu nome aqui"
+                    required
+                  >
                 </div>
 
-                <!-- div estadio -->
-                <div>
-                    <!-- div estadio 1  -->
-                    <div> 
-                        <img src="img/azteca.jpg" alt="estadio azteca">
-                        <div> 
-                            estadio azteca - cidade do mexico
-                        </div>
-                    </div>
-
-                     <!-- div estadio 2  -->
-                     <div> 
-                        <img src="img/bc-place.jpg" alt="estadio bc-place">
-                        <div> 
-                            estadio bc plate - vancouver
-                        </div>
-                    </div>  
-
-                        <!-- div estadio 3 -->
-                     <div> 
-                        <img src="img/bmo.jpg" alt="estadio bmo field">
-                        <div> 
-                            estadio bmo field - toronto
-                        </div>
-                    </div>
-                        
-                    <!-- div estadio 4  -->
-                    <div> 
-                        <img src="img/hard-rock.jpg" alt="estadio hard rock">
-                        <div> 
-                            hard rock stadium - Miami
-                        </div>
-                    </div>
-
-                    <!-- div estadio 5  -->
-                    <div> 
-                        <img src="img/metlife.jpg" alt="estadio metlife">
-                        <div> 
-                            metlife stadium - NY/NJ
-                        </div>
-                    </div>
-
-                    <!-- div estadio 6  -->
-                    <div> 
-                        <img src="img/sofi.jpg" alt="estadio sofi">
-                        <div> 
-                            SoFi stadium - Los angeles
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-            
-                
-            
-        </section><section id = "ingressos"> 
-            <!-- div global -->
-            <div>
-                <!-- div de titulo -->
-                <div> 
-                    <h2>Garanta seu ingresso</h2>
-                    <p>Preencha seus dados abaixo e reserve sua cadeira na historia</p>
-                </div>
-                <!-- div de forumulario -->
-                <div> 
-                    <form>
-                        <!-- div linha -->
-                         <div>
-                            <!-- div input 1  -->
-                            <div>
-                                <label> Nome completo </label>
-                                <input
-                                 type="text"
-                                 placeholder="Nome completo"
-                                 required
-                                 >
-
-                            </div>
-                            <!-- div input 2  -->
-                            <div>
-                                <label> E-mail </label>
-                                <input
-                                 type="email"
-                                 placeholder="Digite seu email"
-                                 required
-                                 >
-                            </div>
-                         </div>
-
-                         <!-- div linha 2-->
-                         <div>
-                            <!-- div input 3  -->
-                            <div>
-                                <label>Categoria do ingresso </label>
-                                <select> 
-                                    <option value="">Selecione...</option>
-                                    <option value="cat3">categoria 3 - R$1000</option>
-                                    <option value="cat2">categoria 2 - R$700</option>
-                                    <option value="cat1">categoria 1 - R$200</option>
-                                </select>
-
-                            </div>
-                            <!-- div input 4 -->
-                            <div>
-                                <label> quantidade </label>
-                                <input
-                                 type="number"
-                                 placeholder="quantidade de ingressos"
-                                 max="6" 
-                                 min="1"
-                                 required
-                                 >
-                            </div>
-                         </div>
-
-                         <!-- div input 5 -->
-                          <div>
-                            <label> Necessidades especiais</label>
-                            <textarea
-                                name="mensagem"
-                                rows="4"
-                                placeholder="Acessibilidade, mobilidade reduzida..."
-                            >
-                            </textarea>
-                          </div>
-
-                          <!-- div input 6 -->
-                           <div>
-                            <input type="checkbox"required>
-                            <label>
-                                concordo com as 
-                                <a href="#">regras da fifa</a>
-                            </label>
-                           </div>
-
-                            <button type="submit">
-                                Solicitar ingressos
-                             </button>
-
-                    </form>
-                    <!-- div de localizaçao -->
-                    <div>
-                        <!-- div de informaçoes -->
-                        <div>
-                            <h3>Palco da grande final</h3>
-                            <!-- endereço -->
-                             <address>
-                                <p>📍 metlife stadium</p>
-                                <p>1 metlife stadium dr</p>
-                                <p>east rutherford, NJ 07073, EUA </p>
-                             </address>
-                             <!-- div contato -->
-                              <div>
-                                <p>📞tickets@fifa2026.com</p>
-                                <p>+55 11 9 7364-8493</p>
-                              </div>
-                        </div>
-                        <!-- div mapa -->
-                         <div>
-                           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019.6580994756428!2d-74.074457!3d40.8135064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f861ad5902bf%3A0x8184280d31051734!2sMetLife%20Stadium!5e0!3m2!1spt-BR!2sbr!4v1786193616911!5m2!1spt-BR!2sbr"
-                             width="100%"
-                            height="100%" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="strict-origin-when-cross-origin"
-                            title="Mapa do Metlife Stadium, local da final da copa"></iframe>
-                         </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </section>
-      
-    </main>
-    <footer>
-    <!-- div global -->
-    <div>
-        <!-- div grid -->
-         <div>
-            <!-- div coluna 1 -->
-             <div>
-                <h4>Copa do mundo 2026</h4>
-                <p>O maior evento esportivo do planeta, sediado pela primeira vez por tres nações</p>
-                <p>Unindo o mundo atraves do futebol</p>
-             </div>
-
-             <!-- div coluna 2 -->
-              <div>
-                <h4>Acompanhe</h4>
-                <!-- div redes sociais -->
-                 <div>
-                    <a href="#">Instagram</a>
-                    <a href="#">Twitter</a>
-                    <a href="#">Youtube</a>
-                    <a href="#">Tiktok</a>
+                <div class="form-grupo">
+                  <label for="email">E-mail</label>
+                  <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="seu@email.com"
+                    required
+                  >
                 </div>
               </div>
-            </div>
-         <!-- div fundo -->
-          <div>
-            <P>© 2026 Organização copa do mundo. Todos os direitos reservados.</P>
-          </div>
-    </div>
-    </footer>
-</body>
 
+              <div class="form-linha">
+                <div class="form-grupo">
+                  <label for="tipo">Categoria do Ingresso</label>
+                  <select id="tipo" name="tipo">
+                    <option value="">Selecione...</option>
+                    <option value="cat3">Categoria 3 — U$ 150</option>
+                    <option value="cat2">Categoria 2 — U$ 300</option>
+                    <option value="cat1">Categoria 1 — U$ 600</option>
+                    <option value="vip">Hospitality / VIP — U$ 1200</option>
+                  </select>
+                </div>
+
+                <div class="form-grupo">
+                  <label for="quantidade">Quantidade</label>
+                  <input 
+                    type="number" 
+                    id="quantidade" 
+                    name="quantidade"
+                    min="1" 
+                    max="6" 
+                    value="1"
+                  >
+                </div>
+              </div>
+
+              <div class="form-grupo">
+                <label for="mensagem">Necessidades especiais? (opcional)</label>
+                <textarea 
+                  id="mensagem" 
+                  name="mensagem" 
+                  rows="4"
+                  placeholder="Acessibilidade, mobilidade reduzida..."
+                ></textarea>
+              </div>
+
+              <div class="form-grupo form-checkbox">
+                <input type="checkbox" id="termos" name="termos" required>
+                <label for="termos">Concordo com as <a href="#">regras da FIFA</a></label>
+              </div>
+
+              <button type="submit" class="btn btn-primario btn-grande">
+                Solicitar Ingressos
+              </button>
+
+            </form>
+          </div>
+
+          <div class="local-wrapper">
+
+            <div class="local-info">
+              <h3>Palco da Grande Final</h3>
+
+              <address>
+                <p>📍 MetLife Stadium</p>
+                <p>1 MetLife Stadium Dr</p>
+                <p>East Rutherford, NJ 07073, EUA</p>
+              </address>
+
+              <div class="local-contatos">
+                <p>📧 tickets@fifa2026.com</p>
+                <p>📱 +1 (800) 555-0000</p>
+              </div>
+            </div>
+
+            <div class="mapa-wrapper">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.354228965902!2d-74.07682392437632!3d40.81363653066376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f861aa554bf7%3A0xc66ba2b8e390c504!2sMetLife%20Stadium!5e0!3m2!1spt-BR!2sbr!4v1716301234567!5m2!1spt-BR!2sbr"
+                width="100%"
+                height="100%"
+                style="border: 0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Mapa do MetLife Stadium, local da final da Copa"
+              ></iframe>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer id="contato">
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-coluna">
+          <h4>Copa do Mundo 2026</h4>
+          <p>O maior evento esportivo do planeta, sediado pela primeira vez por três nações.</p>
+          <p>Unindo o mundo através do futebol.</p>
+        </div>
+
+        <div class="footer-coluna">
+          <h4>Acompanhe</h4>
+          <div class="redes-sociais">
+            <a href="#" class="rede-link">Instagram</a>
+            <a href="#" class="rede-link">Twitter / X</a>
+            <a href="#" class="rede-link">YouTube</a>
+            <a href="#" class="rede-link">TikTok</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="footer-fundo">
+        <p>© 2026 Organização Copa do Mundo. Todos os direitos reservados.</p>
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
 </html>
